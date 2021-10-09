@@ -16,16 +16,18 @@ const products: Product[] = [
     image: "https://source.unsplash.com/JsjXnWlh8-g/",
   },
   {
-    name: "Organic Teddy Bear",
-    price: 102.5,
-    image: "https://source.unsplash.com/Zzgmde4_lYU/",
+    name: "Wooden Horse",
+    price: 58.2,
+    image:
+      "https://modernbabynursery.net/wp-content/uploads/2019/05/Wooden-Rocking-Horse-with-Padded-Seat-A.jpg",
   },
   {
-    name: "Organic Teddy Bear",
-    price: 102.5,
-    image: "https://source.unsplash.com/Zzgmde4_lYU/",
+    name: "Hand Knitted Fish",
+    price: 28.5,
+    image:
+      "https://www.chunkichilli.com/wp-content/uploads/2020/04/fish-4-800x800.jpg",
   },
-]
+];
 
 const state: RootState = {
   showCartDialog: false,

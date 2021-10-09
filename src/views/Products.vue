@@ -19,7 +19,13 @@
       <section id="products-section">
         <v-row justify="space-between">
           <v-col md="4" v-for="(product, index) in products" :key="index">
-            <v-card outlined style="border-radius: 1.2em" width="100%" hover @click="selectProduct(product)">
+            <v-card
+              outlined
+              style="border-radius: 1.2em"
+              width="100%"
+              hover
+              @click="selectProduct(product)"
+            >
               <v-img :src="product.image" height="250px"></v-img>
               <v-card-title class="font-weight-bold">{{
                 product.name
@@ -93,8 +99,6 @@ export default class Products extends Vue {
 
 <style lang="scss" scoped>
 #products {
-  padding: 1em 3em 1em;
-
   &-section {
     margin-top: 1em;
   }

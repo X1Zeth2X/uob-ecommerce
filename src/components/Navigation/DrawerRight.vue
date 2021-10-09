@@ -3,9 +3,7 @@
     <v-navigation-drawer app clipped right width="430" :value="show">
       <div class="mb-4">
         <v-carousel height="400px">
-          <v-carousel-item
-            :src="product.image"
-          ></v-carousel-item>
+          <v-carousel-item :src="product.image"></v-carousel-item>
           <v-carousel-item
             src="https://source.unsplash.com/Mlbw-U7WWfE"
           ></v-carousel-item>
@@ -18,9 +16,8 @@
       <div class="px-4">
         <p class="text-h5 font-weight-bold">{{ product.name }}</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum
-          exercitationem eius nesciunt, velit aperiam perspiciatis eligendi
-          quaerat ...
+          This product contains organic material that is handcrafted with love
+          to give you those comfortable vibes like you have or had as a kid.
           <a href="#" style="text-decoration: none">Read More</a>
         </p>
       </div>
@@ -52,7 +49,7 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-import { Getter, Action } from 'vuex-class';
+import { Getter } from "vuex-class";
 
 import AddToCart from "@/components/AddToCart.vue";
 import { Product } from "@/store/types";
@@ -65,8 +62,8 @@ import { Product } from "@/store/types";
   },
 })
 export default class DrawerRight extends Vue {
-  @Getter('selectedProduct') product!: Product;
-  @Getter('showRightDrawer') show!: boolean;
+  @Getter("selectedProduct") product!: Product;
+  @Getter("showRightDrawer") show!: boolean;
 
   tab = 0;
 }
